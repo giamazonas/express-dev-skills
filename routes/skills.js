@@ -1,10 +1,18 @@
 import { Router } from 'express'
+
 const router = Router()
 
 /* GET home page. */
-router.get('/home', function(req, res) {
-  res.render('home', { title: 'Express' })
+
+router.get('/', function(req, res) {
+  skillsDb.find({}, function(error, skills) {
+    res.render('skills/index', {
+      skills: skills,
+      error: error
+    })
+  })
 })
+
 
 export { 
   router
