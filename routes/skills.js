@@ -4,18 +4,10 @@ const router = Router()
 
 /* GET home page. */
 
-// router.get('/', skillsCtrl.index)
+router.get('/', skillsCtrl.index)
 
+router.get("/:id", skillsCtrl.show)
 
-router.get('/', function(req, res) {
-  skillsDb.find({}, function(error, skills) {
-    console.log('SKILLS', skills)
-    res.render('skills/index', {
-      skills: skills,
-      error: error
-    })
-  })
-})
 
 
 export { 
