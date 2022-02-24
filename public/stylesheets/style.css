@@ -1,6 +1,13 @@
+
 body {
   padding: 50px;
+  text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+  /* background-image: url(../stylesheets/assets/galifreyan.jpeg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: contain; */
 }
 
 a {

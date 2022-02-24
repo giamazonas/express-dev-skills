@@ -6,6 +6,11 @@ const router = Router()
 
 router.get('/', skillsCtrl.index)
 
+// router.get('/202920', skillsCtrl.index)
+// router.get('/202999', skillsCtrl.index)
+// router.get('/202981', skillsCtrl.index)
+// router.get('/202902', skillsCtrl.index)
+
 router.get("/:id", skillsCtrl.show)
 
 
