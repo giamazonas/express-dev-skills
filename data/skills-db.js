@@ -29,7 +29,14 @@ const findById = (id, callback) =>{
   }
 }
 
+function create(skill, callback) {
+  skill.hasSkill = false
+  skills.push(skill)
+  return callback(null, skill)
+}
+
 export {
   find, 
-  findById
+  findById,
+  create,
 }
