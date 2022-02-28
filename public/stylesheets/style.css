@@ -1,13 +1,20 @@
-
+html {
+  box-sizing: border-box;
+}
+*, 
+*::before, 
+*::after { 
+  box-sizing: inherit;
+}
+:root {
+  font-size: 62.5%;
+}
 body {
   padding: 50px;
-  text-align: center;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
-  /* background-image: url(../stylesheets/assets/galifreyan.jpeg); */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
-  /* background-size: contain; */
+  text-align: left;
+  font: 20px "Copperplate", "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: aliceblue;
+
 }
 
 a {
@@ -20,9 +27,26 @@ a {
 }
 
 .delete-form button {
-  color: blue;
+  color: rgb(9, 9, 226);
+  background-color: white;
+  padding: 10px;
+  margin: 10px; 
+}
+.delete-form button:hover{
+  color: white;
+  background-color: rgb(9, 9, 226);
 }
 
 li {
   list-style: none;
+}
+
+#submitBtn {
+  background-color: rgb(129, 129, 248);
+  border-color: rgb(22, 22, 22);
+}
+
+#submitBtn:hover {
+  background-color: rgb(178, 178, 247);
+  border-color: rgb(187, 177, 177);
 }
