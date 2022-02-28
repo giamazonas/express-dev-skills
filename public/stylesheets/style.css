@@ -19,6 +19,8 @@ body {
 
 a {
   color: #00B7FF;
+  margin: 25px;
+  padding: 25px;
 }
 
 .delete-form {
@@ -31,6 +33,7 @@ a {
   background-color: white;
   padding: 10px;
   margin: 10px; 
+  border-radius: 15px;
 }
 .delete-form button:hover{
   color: white;
@@ -49,4 +52,16 @@ li {
 #submitBtn:hover {
   background-color: rgb(178, 178, 247);
   border-color: rgb(187, 177, 177);
+}
+
+#eachSkill {
+  background-color: #d6f1fc;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 10px;
+}
+
+#header {
+  color: blue;
 }

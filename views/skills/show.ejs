@@ -8,14 +8,16 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <h1> Skill </h1>
-  <% if(error) { %>
-    <h2><%= error %></h2>
-  <% } else { %>
-    <h2>Skills #<%= skill._id %></h2>
-    <h3><%= skill.text %></h3>
-    <p>Complete: <%= skill.hasSkill ? "Yes" : "No" %></p>
-  <% } %>
+  <h1 id="header"> Skill </h1>
+  <div  id="eachSkill">
+    <% if(error) { %>
+      <h2><%= error %></h2>
+    <% } else { %>
+      <h2>Skills #<%= skill._id %></h2>
+      <h3><%= skill.text %></h3>
+      <p>Completed: <%= skill.hasSkill ? "Yes" : "No" %></p>
+    <% } %>
+  </div>
   <a href="/skills">Go back</a>
 </body>
 </html>
